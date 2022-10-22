@@ -78,22 +78,22 @@
         For example, you can simplify this code:
 
         function greet(user: { name: string; age: number }) {
-        console.log('Hi, I am ' + user.name);
+            console.log('Hi, I am ' + user.name);
         }
 
         function isOlder(user: { name: string; age: number }, checkAge: number) {
-        return checkAge > user.age;
+            return checkAge > user.age;
         }
         To:
 
         type User = { name: string; age: number };
 
         function greet(user: User) {
-        console.log('Hi, I am ' + user.name);
+            console.log('Hi, I am ' + user.name);
         }
 
         function isOlder(user: User, checkAge: number) {
-        return checkAge > user.age;
+            return checkAge > user.age;
         }
 
 12. function : return type Void
@@ -183,5 +183,10 @@
     이더리움 스마트계약이, 이더리움 가상 머신에서 구동 - 런타임 : 이더리움 가상 머신
 
 ## typescript type : LowCase
+
+## 실행하기
+
+    lite-server 실행
+    tsc-w  <-- nodemon 처럼 실시간 실행
 
 # let 으로 선언하게 되면 타입추론이 일어나게 된다. 타입추론으로
